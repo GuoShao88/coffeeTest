@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/commoncss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,
+    user-scalable=no,viewport-fit=cover">
+    <title>畅享咖啡</title>
+    <style>
+        body {
+            background-image: url('/img/homeBack.jpg');
+            background-position: 0px -22vh;
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+            background-color: #3c6c9f57;
+        }
+
+        .topBox {
+            margin-top: 20vh;
+            width: 100vw;
+            text-align: center;
+            color: rgb(13 19 195 / 65%);
+            font-size: 5vh;
+            letter-spacing: 8px;
+            font-family: cursive;
+            font-weight: 600;
+            margin-bottom: 30vh;
+        }
+
+        .centerBox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .smBox {
+            flex: 0.8;
+            letter-spacing: 3px;
+            margin: 0 2vw;
+            background-color: white;
+            padding: 4vw;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 3.5vh;
+            font-weight: 600;
+            font-family: cursive;
+            color: #2e3337;
+            height: 18vh;
+        }
+
+        .smBox img {
+            width: 68%;
+            height: 66%;
+            margin-bottom: 1vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topBox">XX家咖啡</div>
+    <div class="centerBox">
+        <div class="smBox">
+            <img src="./img/coffeeCup.jpg" alt="">
+            <div onclick="gotoShop()">自提</div>
+        </div>
+        <div class="smBox">
+            <img src="./img/waimaiCar.jpg" alt="">
+            <div>外卖</div>
+        </div>
+    </div>
+    <script>
+        function gotoShop() {
+            window.location.href = "./html/chooseShop.html";
+        }
+    </script>
+</body>
+
+</html>
