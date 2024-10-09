@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="../css/commoncss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,
+    maximum-scale=1.0,
+    user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" href="../css/vantindex.css" />
+    <title>选择店铺</title>
+    <style>
+        .topBox {
+            background: #345297;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 9px;
+            color: white;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="topBox">
+            <div style="flex: 1;"><img src="../img/backIcon.png" alt="" style="width: 6vw;"></div>
+            <div style="flex: 1;text-align: center;">选择店铺</div>
+            <div style="flex: 1;"></div>
+        </div>
+        <div class="headerBox">
+            <van-button type="danger">成功按钮</van-button>
+        </div>
+    </div>
+
+    <script src="../js/vue.global.js"></script>
+    <script src="../js/vant.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vant@2.2/lib/vant.min.js"></script> -->
+    <script type="text/javascript">
+        // 在 #app 标签下渲染一个按钮组件
+        const app = Vue.createApp({});
+        app.use(vant);
+        app.use(vant.Lazyload);
+        vant.showToast('提示');
+        app.mount('#app')
+    </script>
+</body>
+
+</html>
